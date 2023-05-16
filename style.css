@@ -1,0 +1,336 @@
+
+* {
+
+    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Play', sans-serif;
+
+}
+
+
+body {
+    background: #131313;
+}
+
+
+
+header {
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.nav-header{
+    display: flex;
+    text-align: center;
+}
+
+.nav-header h1{
+    text-align: center;
+    text-justify: auto;
+    margin: 100px;
+}
+
+
+
+.logo {
+    width: 150px
+}
+
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+/* STYLES FOR ENCRYPT BOX*/
+
+.encrypt-container {
+    background: #1c1c1e;
+    border-radius: 24px;
+    width: 700px;
+    margin: 20px;
+}
+
+
+
+.text-area {
+    background: #1c1c1e;
+    border-radius: 24px;
+    border: none;
+    max-width: 92%;
+    min-width: 92%;
+    min-height: 130px;
+    max-height: 130px;
+    padding-left: 27px;
+    padding-right: 27px;
+    margin-top: 16px;
+    color: rgb(238, 238, 238);
+    font-size: 40px;
+    font-family: 'Play', sans-serif;
+    text-transform: lowercase;
+}
+
+
+
+
+::placeholder {
+    color: rgb(128, 128, 128);
+    font-size: 40px;
+    font-family: 'Play', sans-serif;
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+
+
+.text-rules {
+    color: rgb(128, 128, 128);
+    font-size: 24px;
+    padding-left: 27px;
+
+}
+
+
+
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 27px;
+    padding-top: 1px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.btn-encrypt {
+    background-color: #9d46c6;
+    border: 1px solid #9d46c6;
+    border-radius: 24px;
+    box-shadow: 0px 1px 11px 1px rgba(134, 64, 167, 0.48);
+    -webkit-box-shadow: 0px 1px 11px 1px rgba(134, 64, 167, 0.48);
+    -moz-box-shadow: 0px 1px 11px 1px rgba(134, 64, 167, 0.48);
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    cursor: pointer;
+    height: 60px;
+    width: 300px;
+    margin: 10px;
+}
+
+.btn-encrypt:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #9d46c6;
+    font-size: 28px;
+    box-shadow: 0px 1px 11px 1px rgba(255, 255, 255, 0.30);
+    -webkit-box-shadow: 0px 1px 11px 1px rgba(255, 255, 255, 0.30);
+    -moz-box-shadow: 0px 1px 11px 1px rgba(255, 255, 255, 0.30);
+    transition: .5s;
+
+}
+
+.btn-unencrypt {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 24px;
+    box-shadow: 0px 1px 11px 1px rgba(255, 255, 255, 0.30);
+    -webkit-box-shadow: 0px 1px 11px 1px rgba(255, 255, 255, 0.30);
+    -moz-box-shadow: 0px 1px 11px 1px rgba(255, 255, 255, 0.30);
+    color: #9d46c6;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    height: 60px;
+    width: 300px;
+    margin: 10px;
+}
+
+.btn-unencrypt:hover {
+    background-color: #9d46c6;
+    border: 1px solid #9d46c6;
+    font-size: 27px;
+    box-shadow: 0px 1px 11px 1px rgba(134, 64, 167, 0.48);
+    -webkit-box-shadow: 0px 1px 11px 1px rgba(134, 64, 167, 0.48);
+    -moz-box-shadow: 0px 1px 11px 1px rgba(134, 64, 167, 0.48);
+    color: white;
+    transition: .5s;
+
+}
+
+
+
+
+/* STYLES FOR UNENCRYPT BOX*/
+
+
+.unencrypt-container {
+    background: white;
+    border-radius: 24px;
+    width: 450px;
+    margin: 20px;
+}
+
+.text-area-message {
+    background: white;
+    background-image: url(img/eyes.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 24px;
+    border: none;
+    max-width: 87%;
+    min-width: 87%;
+    min-height: 400px;
+    max-height: 400px;
+    padding-left: 27px;
+    padding-right: 27px;
+    margin-top: 16px;
+    margin-left: 2px;
+    color: rgb(48, 48, 48);
+    font-size: 40px;
+    font-family: 'Play', sans-serif;
+    text-transform: lowercase;
+    text-align: center;
+
+}
+
+.text-before-encrypt {
+    position: absolute;
+    color: #0e231a;
+    margin-top: -170px;
+    padding-left: 65px;
+    font-size: 20px;
+
+
+}
+
+.text-area-message:focus {
+    outline: none;
+}
+
+
+
+.buttons-un {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+
+.btn-copy {
+    background-color: #9d46c6;
+    border: 1px solid #9d46c6;
+    border-radius: 24px;
+    box-shadow: 0px 1px 11px 1px rgba(134, 64, 167, 0.68);
+    -webkit-box-shadow: 0px 1px 11px 1px rgba(134, 64, 167, 0.68);
+    -moz-box-shadow: 0px 1px 11px 1px rgba(134, 64, 167, 0.68);
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    cursor: pointer;
+    height: 60px;
+    width: 390px;
+}
+
+.btn-copy:hover {
+    background-color: #522368;
+    border: 1px solid #522368;
+    color: white;
+    font-size: 27px;
+    box-shadow: 0px 1px 11px 1px rgba(255, 255, 255, 0.30);
+    -webkit-box-shadow: 0px 1px 11px 1px rgba(255, 255, 255, 0.30);
+    -moz-box-shadow: 0px 1px 11px 1px rgba(255, 255, 255, 0.30);
+    transition: .5s;
+}
+
+
+/* 
+BACKGROUND */
+
+
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #747474;
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  -webkit-animation: cube 12s ease-in forwards infinite;
+          animation: cube 12s ease-in forwards infinite;
+          z-index: -1;
+}
+.cube:nth-child(2n) {
+  border-color: #7f7f7f;
+}
+.cube:nth-child(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  left: 25vw;
+  top: 40vh;
+}
+.cube:nth-child(3) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  left: 75vw;
+  top: 50vh;
+}
+.cube:nth-child(4) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  left: 90vw;
+  top: 10vh;
+}
+.cube:nth-child(5) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+  left: 10vw;
+  top: 85vh;
+}
+.cube:nth-child(6) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+  left: 50vw;
+  top: 10vh;
+}
+
+@-webkit-keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
